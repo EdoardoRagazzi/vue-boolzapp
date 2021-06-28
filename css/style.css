@@ -59,7 +59,20 @@
     width: 100%;
 }
 .bottom-sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #F3EEEA;
     height: 100px;
     
+}
+.bottom-sidebar input{
+width: 80%;
+height: 50px;
+padding: 15px;
+border-radius: 5px;
+border: 2px solid grey;
+}
+.bottom-sidebar input:hover{
+    border: 2px solid lightskyblue;
 }
