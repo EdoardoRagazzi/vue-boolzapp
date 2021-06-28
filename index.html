@@ -54,8 +54,8 @@
             </div>
             <div class="chats">
                 <div class="logo-utente" v-for="(item,index) in contacts">
-                    <img :src="contacts" alt="">
-                    <h5> {{item}} </h5>
+                    <img :src="'img/avatar' + item.avatar + '.jpg'" alt="">
+                    <h5> {{item.name}} </h5>
                 </div>
 
             </div>
@@ -64,7 +64,7 @@
 
         </div>
         <!-- RIGHT SIDE  -->
-        <div class="right">
+        <div class=" right">
             <div class="upper-sidebar">
                 <div class="logo-utente">
                     <img src="https://www.pngarts.com/files/3/Avatar-Transparent-Image.png" alt="">
