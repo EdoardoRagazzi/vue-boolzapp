@@ -120,7 +120,7 @@ body{
 }
 /* RIGHT SIDEBAR */
 .middle-sidebar{
-    background-image:url(/img/background.png);
+    background-image:url(/img/mine.jpg);
     background-size:  cover;
     background-repeat: no-repeat;
     height: calc(100% - 150px);
