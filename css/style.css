@@ -32,30 +32,34 @@
 /* LEFT SIDE */
 .left{
     
-    background-color: crimson;
+    background-color: #FFFFFF;
     height: 100%;
     width: 30%;
     border-right: 1px solid lightgray;
 }
-.upper-sidebar{
-    background-color: darkgrey;
-    height: 100px;
-    width: 100%;
 
-}
 /* RIGHT SIDE */
 .right{
     background-color: darkgreen;
     height: 100%;
     width: 70%;
 }
+/* SIDEBAR */
+.upper-sidebar{
+    background-color: #EAEAEA;
+    height: 100px;
+    width: 100%;
+
+}
 .middle-sidebar{
-    background-color: lightseagreen;
+    background-image:url(/img/background.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
     height: calc(100% - 200px);
     width: 100%;
 }
 .bottom-sidebar{
-    background-color: limegreen;
+    background-color: #F3EEEA;
     height: 100px;
     
 }
