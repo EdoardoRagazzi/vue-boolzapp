@@ -11,18 +11,7 @@ body{
     background-size:  cover;
     background-repeat: no-repeat;
 }
-.background-up{
-    background-color: #009688;
-    height: 100px;
-    width: 100vw;
-    position: absolute;
-}
-.background-down{
-    background-color: #DBDBD3;
-    height: calc(100vh - 100px);
-    width: 100vw;
-    position: absolute;
-}
+
 /* CONTAINER APPLICATION */
 .container{
     display: flex;
@@ -45,22 +34,47 @@ body{
 
 }
 .upper-sidebar i{
-    padding: 10px;
+    padding: 5px;
+}
+.chats .logo-utente{
+    height:50px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+
+    
+}
+.chats .logo-utente img{
+    height:50px;
+    width: 50px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+.chats .logo-utente h5{
+    line-height: 50px;
+    margin-left: 5px;
 }
 .logo-utente{
     height: 90%;
-    width: 20%;
-    padding-left: 5%;
+    width: 60%;
+    padding-left: 2%;
+    
 }
 .logo-utente img{
     height: 100%;
-    width: 100%;
+    width: 50px;
+    float: left;
+}
+.logo-utente h3{
+    line-height: 50px; 
 }
 
 
 /* LEFT SIDE */
 .left{
     margin-right: -1px;
+    min-width: 300px;
     min-height: 300px;
     background-color: #FFFFFF;
     width: 30%;
@@ -134,6 +148,25 @@ body{
 }
 .bottom-sidebar i{
     color: grey;
+}
+
+.alert-sidebar i{
+    background-color: white;
+    border-radius: 40px;
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    padding-top: 8px;
+    text-align: center;
+    color:#8EDAFC;
+    float: left; 
+}
+.text{
+    line-height: 20px;
+    padding: 5px;
+}
+.text p{
+    font-size: 12px;
 }
 
 
