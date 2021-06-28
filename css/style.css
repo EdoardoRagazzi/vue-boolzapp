@@ -4,50 +4,90 @@
     box-sizing: border-box;
 }
 /* CONTAINER ID APP */
-.container{
-    position: relative;
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(130deg, #fdcd3b 50%, #009688 50%);
+    background-size:  cover;
+    background-repeat: no-repeat;
 }
 .background-up{
     background-color: #009688;
     height: 100px;
     width: 100vw;
+    position: absolute;
 }
 .background-down{
     background-color: #DBDBD3;
     height: calc(100vh - 100px);
     width: 100vw;
+    position: absolute;
 }
 /* CONTAINER APPLICATION */
-.container-app{
+.container{
     display: flex;
     position: absolute;
     top: 10px;
     left: 10%;
-    background-color: chocolate;
     width: 80%;
-    height: calc(100vh - 50px);
+    min-height: 300px;
+   height: 80%;
     margin: auto;
 }
 
 /* LEFT SIDE */
 .left{
-    
+    margin-right: -1px;
+    min-height: 300px;
     background-color: #FFFFFF;
-    height: 100%;
     width: 30%;
     border-right: 1px solid lightgray;
 }
+/* LEFT SIDEBAR */
+.alert-sidebar{
+    background-color: #8EDAFC;
+    height: 50px;
+    width: 100%;
+}
+
+.utenti-sidebar{
+    height: 100%;
+    width: 100%;
+}
+.input-chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FAFAFA;
+    height: 40px;
+    width: 100%;
+}
+
+.input-chat input{
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    
+}
+.chats{
+    background-color: white;
+    overflow-y: auto;
+    height: calc(100% - 140px);
+    width: 100%;
+}
+
+
 
 /* RIGHT SIDE */
 .right{
-    background-color: darkgreen;
-    height: 100%;
+    min-height: 300px;
     width: 70%;
 }
 /* SIDEBAR */
 .upper-sidebar{
     background-color: #EAEAEA;
-    height: 100px;
+    height:50px;
     width: 100%;
 
 }
@@ -55,7 +95,7 @@
     background-image:url(/img/background.png);
     background-size:  cover;
     background-repeat: no-repeat;
-    height: calc(100% - 200px);
+    height: calc(100% - 150px);
     width: 100%;
 }
 
@@ -81,29 +121,5 @@ border: 2px solid grey;
 .bottom-sidebar i{
     color: grey;
 }
-.alert-sidebar{
-    background-color: #8EDAFC;
-    height: 80px;
-    width: 100%;
-}
-.input-chat{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #FAFAFA;
-    height: 50px;
-    width: 100%;
-}
-.input-chat input{
-    width: 80%;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 20px;
-    
-}
-.chats{
-    background-color: indigo;
-    overflow-y: auto;
-    height: calc(100vh - 230px);
-    width: 100%;
-}
+
+
