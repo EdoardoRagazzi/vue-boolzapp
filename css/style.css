@@ -34,6 +34,29 @@ body{
    height: 80%;
     margin: auto;
 }
+/* UPPER SIDEBAR */
+.upper-sidebar{
+    background-color: #EAEAEA;
+    height:50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.upper-sidebar i{
+    padding: 10px;
+}
+.logo-utente{
+    height: 90%;
+    width: 20%;
+    padding-left: 5%;
+}
+.logo-utente img{
+    height: 100%;
+    width: 100%;
+}
+
 
 /* LEFT SIDE */
 .left{
@@ -41,7 +64,7 @@ body{
     min-height: 300px;
     background-color: #FFFFFF;
     width: 30%;
-    border-right: 1px solid lightgray;
+    border-right: 2px solid lightgray;
 }
 /* LEFT SIDEBAR */
 .alert-sidebar{
@@ -57,7 +80,7 @@ body{
 .input-chat{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly   ;
     background-color: #FAFAFA;
     height: 40px;
     width: 100%;
@@ -76,21 +99,12 @@ body{
     height: calc(100% - 140px);
     width: 100%;
 }
-
-
-
 /* RIGHT SIDE */
 .right{
     min-height: 300px;
     width: 70%;
 }
-/* SIDEBAR */
-.upper-sidebar{
-    background-color: #EAEAEA;
-    height:50px;
-    width: 100%;
-
-}
+/* RIGHT SIDEBAR */
 .middle-sidebar{
     background-image:url(/img/background.png);
     background-size:  cover;
@@ -109,11 +123,11 @@ body{
     
 }
 .bottom-sidebar input{
-width: 80%;
-height: 50px;
-padding: 15px;
-border-radius: 5px;
-border: 2px solid grey;
+    width: 80%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 .bottom-sidebar input:hover{
     border: 2px solid lightskyblue;
