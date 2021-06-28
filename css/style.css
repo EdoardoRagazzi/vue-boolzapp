@@ -58,6 +58,8 @@
     height: calc(100% - 200px);
     width: 100%;
 }
+
+/* BOTTOM SIDEBAR RIGHT SIDE */
 .bottom-sidebar{
     display: flex;
     align-items: center;
@@ -75,4 +77,33 @@ border: 2px solid grey;
 }
 .bottom-sidebar input:hover{
     border: 2px solid lightskyblue;
+}
+.bottom-sidebar i{
+    color: grey;
+}
+.alert-sidebar{
+    background-color: #8EDAFC;
+    height: 80px;
+    width: 100%;
+}
+.input-chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FAFAFA;
+    height: 50px;
+    width: 100%;
+}
+.input-chat input{
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    
+}
+.chats{
+    background-color: indigo;
+    overflow-y: auto;
+    height: calc(100vh - 230px);
+    width: 100%;
 }
