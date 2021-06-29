@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="middle-sidebar">
-                <div class="texts" v-for="(item,index) in (contacts[this.counter].messages)">
+                <div v-for="(item,index) in (contacts[this.counter].messages)">
                     <div v-if="item.status == 'sent'" class="sendMess">
                         {{item.text}}
                     </div>

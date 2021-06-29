@@ -185,6 +185,23 @@ body{
     border: 5px solid currentcolor;
     padding: 15px;
 }
+.sendMess{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #009688;
+
+    
+  
+}
+.receiveMess{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    background-color:grey;
+
+
+    
+}
 
 
 
