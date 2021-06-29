@@ -132,7 +132,9 @@ body{
     height: calc(100% - 150px);
     width: 100%;
     overflow-y: scroll;
-    
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-end;
 }
 
 /* BOTTOM SIDEBAR RIGHT SIDE */
@@ -186,21 +188,22 @@ body{
     padding: 15px;
 }
 .sendMess{
-    display: flex;
-    justify-content: flex-end;
+   float: right;
     background-color: #009688;
-
-    
-  
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 5px;
 }
 .receiveMess{
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    float: left;
     background-color:grey;
-
-
-    
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
 }
 
 
