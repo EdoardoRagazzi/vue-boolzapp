@@ -52,9 +52,15 @@ const app = new Vue(
                     ],
                 }
             ]
-
-
-
+        },
+        methods: {
+            addMessage(index) {
+                console.log(this.contacts[index].messages);
+                const messagge = this.contacts[index].messages;
+                for (var i = 0; i < contacts.length; i++) {
+                    document.getElementById('message').innerHTML = `${this.contacts[index].messages}`
+                }
+            }
         }
     }
 );
