@@ -45,9 +45,10 @@ body{
 
     
 }
-.chats .logo-utente img{
+    img{
     height:50px;
     width: 50px;
+    border-radius: 20px;
     padding-bottom: 5px;
     vertical-align: middle;
 }
@@ -162,11 +163,12 @@ body{
 
 .alert-sidebar i{
     background-color: white;
-    border-radius: 40px;
-    height: 50px;
-    width: 50px;
-    font-size: 2em;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em;
     padding-top: 8px;
+    margin: 5px 5px;
     text-align: center;
     color:#8EDAFC;
     float: left; 

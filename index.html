@@ -27,16 +27,13 @@
                     <img src="img/avatar_io.jpg" alt="">
                     <h3>Nome Utente</h3>
                 </div>
-
                 <div class="icons">
                     <i class="fas fa-spinner"></i>
                     <i class="far fa-envelope"></i>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
-
             </div>
             <div class="alert-sidebar">
-
                 <i class="fas fa-bell-slash"></i>
                 <div class="text">
                     <h5>Riveci notifiche di messaggi</h3>
@@ -44,28 +41,19 @@
                             <a rel="stylesheet" href=""> Attiva notifiche desktop </a>
                         </p>
                 </div>
-
-
-
             </div>
-
             <div class=" input-chat">
                 <div class="search">
                     <i class="fas fa-search"></i>
                     <input type="text" placeholder=" Cerca o inizia una nuova chat">
                 </div>
-
             </div>
             <div class="chats">
                 <div class="logo-utente" v-for="(item,index) in contacts" @click="changeUtente(item,index)">
                     <img :src="'img/avatar' + item.avatar + '.jpg'" alt="">
                     <h5> {{item.name}} </h5>
                 </div>
-
             </div>
-
-
-
         </div>
         <!-- RIGHT SIDE  -->
         <div class=" right">
@@ -90,23 +78,16 @@
                         {{item.text}}
                     </div>
                 </div>
-
             </div>
             <div class="bottom-sidebar">
                 <i class="far fa-smile-beam"></i>
                 <input type="text" placeholder="Scrivi un messaggio">
                 <i class="fas fa-microphone"></i>
             </div>
-
-
-
         </div>
     </div>
 
 
-
-
-    </div>
     <script src="js/script.js"></script>
 </body>
 
