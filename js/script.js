@@ -51,6 +51,94 @@ const app = new Vue(
                             status: 'sent'
                         }
                     ],
+                },
+                {
+                    name: 'Mariano',
+                    avatar: '_3',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '20/03/2020 16:30:00',
+                            text: 'si ok forse ',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 16:30:55',
+                            text: 'Bene grazie!',
+                            status: 'received'
+                        },
+                        {
+                            date: '20/03/2020 16:35:00',
+                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            status: 'sent'
+                        }
+                    ],
+                },
+                {
+                    name: 'Marzio',
+                    avatar: '_4',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '20/03/2020 16:30:00',
+                            text: 'Ciao come stai?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 16:30:55',
+                            text: 'Bene grazie! Stasera ci vediamo?',
+                            status: 'received'
+                        },
+                        {
+                            date: '20/03/2020 16:35:00',
+                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            status: 'sent'
+                        }
+                    ],
+                },
+                {
+                    name: 'Carmelo',
+                    avatar: '_5',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '20/03/2020 16:30:00',
+                            text: 'Ciao come stai?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 16:30:55',
+                            text: 'Bene grazie! Stasera ci vediamo?',
+                            status: 'received'
+                        },
+                        {
+                            date: '20/03/2020 16:35:00',
+                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            status: 'sent'
+                        }
+                    ],
+                },
+                {
+                    name: 'Edo',
+                    avatar: '_6',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '20/03/2020 16:30:00',
+                            text: 'Ciao come stai?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 16:30:55',
+                            text: 'Bene grazie! Stasera ci vediamo?',
+                            status: 'received'
+                        },
+                        {
+                            date: '20/03/2020 16:35:00',
+                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            status: 'sent'
+                        }
+                    ],
                 }
             ]
         },
