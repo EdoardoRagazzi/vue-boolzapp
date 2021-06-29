@@ -66,6 +66,14 @@ const app = new Vue(
                         date: dayjs().format('YYYY / MM / DD')
                     }
                     destinatario.messages.push(messaggio)
+                    if (this.newData = messaggio) {
+                        const messaggioReceived = {
+                            text: 'tette grosse',
+                            date: dayjs().format('YYYY / MM / DD'),
+                            status: 'received'
+                        }
+                        destinatario.messages.push(messaggioReceived)
+                    }
                     this.newData = '';
                 }
 
