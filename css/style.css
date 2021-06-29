@@ -11,6 +11,13 @@ body{
     background-size:  cover;
     background-repeat: no-repeat;
 }
+.icons{
+    color:grey;
+}
+.icons:hover{
+    cursor: pointer;
+}
+
 
 /* CONTAINER APPLICATION */
 .container{
@@ -45,12 +52,13 @@ body{
 
     
 }
-    img{
+img{
     height:50px;
     width: 50px;
     border-radius: 20px;
     padding-bottom: 5px;
     vertical-align: middle;
+    cursor: pointer;
 }
 .chats .logo-utente h5{
     line-height: 50px;
@@ -70,6 +78,7 @@ body{
 .logo-utente h3{
     line-height: 50px; 
 }
+
 
 
 /* LEFT SIDE */

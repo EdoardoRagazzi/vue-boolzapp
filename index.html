@@ -81,7 +81,7 @@
             </div>
             <div class="bottom-sidebar">
                 <i class="far fa-smile-beam"></i>
-                <input type="text" placeholder="Scrivi un messaggio">
+                <input type="text" placeholder="Scrivi un messaggio" v-model="newData" @keyup.enter="addMessage">
                 <i class="fas fa-microphone"></i>
             </div>
         </div>

@@ -5,6 +5,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+            newData: '',
             counter: 0,
             contacts: [
                 {
@@ -56,7 +57,20 @@ const app = new Vue(
         methods: {
             changeUtente(item, index) {
                 this.counter = index;
+            },
+            addMessage() {
+                const destinatario = this.contacts[this.counter]
+                if (this.newData != '') {
+                    const messaggio = {
+                        text: this.newData,
+                    }
+                    destinatario.messages.push(messaggio)
+                    console.log(this.newData);
+                    this.newData = '';
+                }
+
             }
+
         }
     }
 );
