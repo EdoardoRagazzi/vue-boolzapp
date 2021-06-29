@@ -70,11 +70,9 @@
         <!-- RIGHT SIDE  -->
         <div class=" right">
             <div class="upper-sidebar">
-                <div class="logo-utente" v-for="(item,index) in contacts[this.counter]">
-                    <!-- <img :src="'img/avatar' + item.avatar + '.jpg'" alt=""> -->
-
-                    <h3>{{item.name}}</h3>
-
+                <div class="logo-utente">
+                    <img :src="'img/avatar' + contacts[this.counter].avatar + '.jpg'" alt="">
+                    <h3>{{contacts[this.counter].name}}</h3>
                 </div>
 
                 <div class="icons">
