@@ -63,9 +63,9 @@ const app = new Vue(
                 if (this.newData != '') {
                     const messaggio = {
                         text: this.newData,
+                        date: dayjs().format('YYYY / MM / DD')
                     }
                     destinatario.messages.push(messaggio)
-                    console.log(this.newData);
                     this.newData = '';
                 }
 
