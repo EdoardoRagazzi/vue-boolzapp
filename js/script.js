@@ -25,7 +25,7 @@ const app = new Vue(
                         },
                         {
                             date: '10/01/2020 16:15:22',
-                            text: 'Tutto fatto!',
+                            text: 'Tutto fatto! ',
                             status: 'received'
                         }
                     ],

@@ -71,11 +71,13 @@
             </div>
             <div class="middle-sidebar">
                 <div v-for="(item,index) in (contacts[this.counter].messages)">
-                    <div v-if="item.status == 'sent'" class="sendMess">
-                        {{item.text}}
+                    <div v-if="item.status == 'received'" class="receiveMess">
+                        {{item.text}} <br>
+                        <div class="data">{{item.date}}</div>
                     </div>
-                    <div v-else class="receiveMess">
-                        {{item.text}}
+                    <div v-else class="sendMess">
+                        {{item.text}} <br>
+                        <div class="data">{{item.date}}</div>
                     </div>
                 </div>
             </div>

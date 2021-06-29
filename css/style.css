@@ -201,7 +201,7 @@ img{
 .sendMess{
    float: right;
     background-color: #009688;
-    height: 40px;
+    
     text-align: center;
     border-radius: 10px;
     padding: 10px; 
@@ -211,12 +211,16 @@ img{
 .receiveMess{
     float: left;
     background-color:grey;
-    height: 40px;
+   
     text-align: center;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
     color: white;
+}
+.data{
+    font-size: 0.4rem;
+    float: right;
 }
 
 
