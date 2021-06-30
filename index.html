@@ -47,15 +47,17 @@
             <div class=" input-chat">
                 <div class="search">
                     <i class="fas fa-search"></i>
-                    <input type="text" placeholder=" Cerca o inizia una nuova chat">
+                    <input type="text" placeholder=" Cerca o inizia una nuova chat" v-model="stringa">
+
                 </div>
             </div>
             <div class="chats">
-                <div class="logo-utente" v-for="(item,index) in contacts" @click="changeUtente(index)"
-                    @click="searchMessage(index)">
+                <div class="logo-utente" v-for="(item,index) in search" @click="changeUtente(index)">
                     <img :src="'img/avatar' + item.avatar + '.jpg'" alt="">
-                    <h5> {{item.name}} </h5>
-                    <p>{{item.messages[item.messages.length - 1].text}}</p>
+                    <div>
+                        <h5> {{item.name}} </h5>
+                        <p>{{item.messages[item.messages.length - 1].text}}</p>
+                    </div>
                 </div>
             </div>
         </div>

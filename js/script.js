@@ -5,6 +5,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+            stringa: '',
             newData: '',
             counter: 0,
             contacts: [
@@ -72,13 +73,13 @@ const app = new Vue(
                         {
                             hour: '16:30:00',
                             date: dayjs().format('dddd'),
-                            text: 'Bene grazie!',
+                            text: 'Bene ',
                             status: 'received'
                         },
                         {
                             hour: '16:30:00',
                             date: dayjs().format('dddd'),
-                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            text: 'Puo darsi',
                             status: 'sent'
                         }
                     ],
@@ -103,7 +104,7 @@ const app = new Vue(
                         {
                             hour: '16:30:00',
                             date: dayjs().format('dddd'),
-                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            text: 'Non sono a casa',
                             status: 'sent'
                         }
                     ],
@@ -128,7 +129,7 @@ const app = new Vue(
                         {
                             hour: '16:30:00',
                             date: dayjs().format('dddd'),
-                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            text: 'Forse si',
                             status: 'sent'
                         }
                     ],
@@ -153,7 +154,7 @@ const app = new Vue(
                         {
                             hour: '16:30:00',
                             date: dayjs().format('dddd'),
-                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            text: "Potrebbe anche darsi,basta che mi scrivi e ci mettiamo d'accordo",
                             status: 'sent'
                         }
                     ],
@@ -189,9 +190,19 @@ const app = new Vue(
 
                 }
 
-            },
+            }
 
 
+        },
+        computed: {
+
+            search() {
+                return this.contacts.filter((element) => {
+                    return element.name.toLowerCase().includes(this.stringa.toLowerCase())
+                }
+
+                )
+            }
 
         }
     }
