@@ -133,6 +133,7 @@ img{
 .right{
     min-height: 300px;
     width: 70%;
+    position: relative;
 }
 /* RIGHT SIDEBAR */
 .middle-sidebar{
@@ -182,48 +183,52 @@ img{
     color:#8EDAFC;
     float: left; 
 }
-.text{
-    line-height: 20px;
-    padding: 5px;
-}
-.text p{
-    font-size: 12px;
-}
-.texts{
-    margin-bottom: 50px;
-    background-color: transparent;
-    height: 50px;
-    width: 30%;
-    box-shadow: 0px 0px 15px currentcolor;
-    border: 5px solid currentcolor;
-    padding: 15px;
-}
+
+/*--------MESSAGE------*/
 .sendMess{
    float: right;
     background-color: #009688;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-    text-align: center;
     border-radius: 10px;
+    width: fit-content;
+    max-width: 60%;
+    word-wrap: break-word;
     padding: 10px; 
-    margin: 5px;
+    margin: 2% 10%;
     color: white;
     
+    
 }
-
 .receiveMess{
     float: left;
     background-color:grey;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    width: fit-content;
+    max-width: 60%;
+    word-wrap: break-word;
     border-radius: 10px;
     padding: 10px;
-    margin: 5px;
-    color: white;
+    margin: 2% 10%;
+    color: white;   
     border-width: 13px 10px 0 10px;
 }
 .data{
     font-size: 0.4rem;
     float: right;
+}
+.day{
+    color: black;
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    max-width: 60%;
+    word-wrap: break-word;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2% 10%;
+    
 }
 
 

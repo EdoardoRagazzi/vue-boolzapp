@@ -72,16 +72,25 @@
                 </div>
             </div>
             <div class="middle-sidebar">
+
                 <div v-for="(item,index) in contacts[this.counter].messages">
                     <div v-if="item.status == 'received'" class="receiveMess">
                         {{item.text}} <br>
-                        <div class="data">{{item.date}}</div>
+                        <div class="data">{{item.hour}}</div>
                     </div>
                     <div v-else class="sendMess">
                         {{item.text}} <br>
-                        <div class="data">{{item.date}}</div>
+                        <div class="data">{{item.hour}}</div>
                     </div>
+
                 </div>
+                <div v-for="(item,index) in contacts[this.counter].messages">
+                    <div class="day" v-if="index == 0">
+                        {{item.date}}
+                    </div>
+
+                </div>
+
             </div>
             <div class="bottom-sidebar">
                 <i class="far fa-smile-beam"></i>

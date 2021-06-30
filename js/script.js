@@ -14,17 +14,20 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Hai portato a spasso il cane?',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Ricordati di dargli da mangiare',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 16:15:22',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Tutto fatto! ',
                             status: 'received'
                         }
@@ -36,17 +39,20 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                            date: '20/03/2020 16:30:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Ciao come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '20/03/2020 16:30:55',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Bene grazie! Stasera ci vediamo?',
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020 16:35:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
@@ -58,17 +64,20 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                            date: '20/03/2020 16:30:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'si ok forse ',
                             status: 'sent'
                         },
                         {
-                            date: '20/03/2020 16:30:55',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Bene grazie!',
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020 16:35:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
@@ -80,17 +89,20 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                            date: '20/03/2020 16:30:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Ciao come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '20/03/2020 16:30:55',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Bene grazie! Stasera ci vediamo?',
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020 16:35:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
@@ -102,17 +114,20 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                            date: '20/03/2020 16:30:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Ciao come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '20/03/2020 16:30:55',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Bene grazie! Stasera ci vediamo?',
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020 16:35:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
@@ -124,17 +139,20 @@ const app = new Vue(
                     visible: true,
                     messages: [
                         {
-                            date: '20/03/2020 16:30:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Ciao come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '20/03/2020 16:30:55',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Bene grazie! Stasera ci vediamo?',
                             status: 'received'
                         },
                         {
-                            date: '20/03/2020 16:35:00',
+                            hour: '16:30:00',
+                            date: dayjs().format('dddd'),
                             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
@@ -151,7 +169,7 @@ const app = new Vue(
                 if (this.newData != '') {
                     const messaggio = {
                         text: this.newData,
-                        date: dayjs().format('YYYY / MM / DD')
+                        hour: dayjs().format('h:m:s'),
                     }
                     destinatario.messages.push(messaggio)
                     myfunction();
@@ -160,13 +178,13 @@ const app = new Vue(
                             if (this.newData = messaggio) {
                                 const messaggioReceived = {
                                     text: 'Ahn ok ',
-                                    date: dayjs().format('YYYY / MM / DD'),
+                                    hour: dayjs().format('h:m:s'),
                                     status: 'received'
                                 }
                                 destinatario.messages.push(messaggioReceived)
                             }
                             this.newData = '';
-                        }, 3000);
+                        }, 1000);
                     }
 
                 }
