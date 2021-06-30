@@ -201,22 +201,25 @@ img{
 .sendMess{
    float: right;
     background-color: #009688;
-    
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 10px;
     padding: 10px; 
     margin: 5px;
     color: white;
+    
 }
+
 .receiveMess{
     float: left;
     background-color:grey;
-   
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
     color: white;
+    border-width: 13px 10px 0 10px;
 }
 .data{
     font-size: 0.4rem;

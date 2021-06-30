@@ -143,7 +143,7 @@ const app = new Vue(
             ]
         },
         methods: {
-            changeUtente(item, index) {
+            changeUtente(index) {
                 this.counter = index;
             },
             addMessage() {
@@ -154,15 +154,21 @@ const app = new Vue(
                         date: dayjs().format('YYYY / MM / DD')
                     }
                     destinatario.messages.push(messaggio)
-                    if (this.newData = messaggio) {
-                        const messaggioReceived = {
-                            text: 'tette grosse',
-                            date: dayjs().format('YYYY / MM / DD'),
-                            status: 'received'
-                        }
-                        destinatario.messages.push(messaggioReceived)
+                    myfunction();
+                    function myfunction() {
+                        setTimeout(function () {
+                            if (this.newData = messaggio) {
+                                const messaggioReceived = {
+                                    text: 'Ahn ok ',
+                                    date: dayjs().format('YYYY / MM / DD'),
+                                    status: 'received'
+                                }
+                                destinatario.messages.push(messaggioReceived)
+                            }
+                            this.newData = '';
+                        }, 3000);
                     }
-                    this.newData = '';
+
                 }
 
             }

@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="chats">
-                <div class="logo-utente" v-for="(item,index) in contacts" @click="changeUtente(item,index)">
+                <div class="logo-utente" v-for="(item,index) in contacts" @click="changeUtente(index)">
                     <img :src="'img/avatar' + item.avatar + '.jpg'" alt="">
                     <h5> {{item.name}} </h5>
                 </div>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="middle-sidebar">
-                <div v-for="(item,index) in (contacts[this.counter].messages)">
+                <div v-for="(item,index) in contacts[this.counter].messages">
                     <div v-if="item.status == 'received'" class="receiveMess">
                         {{item.text}} <br>
                         <div class="data">{{item.date}}</div>
