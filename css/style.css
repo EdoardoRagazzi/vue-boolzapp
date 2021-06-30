@@ -81,8 +81,12 @@ background-color: #EAEAEA;
     padding-top: 10px;
   
 }
-
-
+.logo-utente p{
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 /* LEFT SIDE */
 .left{
