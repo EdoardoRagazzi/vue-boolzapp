@@ -22,13 +22,13 @@ const app = new Vue(
                         },
                         {
                             hour: '16:30:00',
-                            date: dayjs().format('dddd'),
+                            date: dayjs(new Date()).format('dddd'),
                             text: 'Ricordati di dargli da mangiare',
                             status: 'sent'
                         },
                         {
                             hour: '16:30:00',
-                            date: dayjs().format('dddd'),
+                            date: dayjs(new Date()).format('dddd'),
                             text: 'Tutto fatto! ',
                             status: 'received'
                         }
@@ -179,7 +179,7 @@ const app = new Vue(
                             if (this.newData = messaggio) {
                                 const messaggioReceived = {
                                     text: 'Ahn ok ',
-                                    hour: dayjs().format('h:m:s'),
+                                    hour: dayjs().format('hh:mm:ss'),
                                     status: 'received'
                                 }
                                 destinatario.messages.push(messaggioReceived)
@@ -187,15 +187,10 @@ const app = new Vue(
                             this.newData = '';
                         }, 1000);
                     }
-
                 }
-
             }
-
-
         },
         computed: {
-
             search() {
                 return this.contacts.filter((element) => {
                     return element.name.toLowerCase().includes(this.stringa.toLowerCase())

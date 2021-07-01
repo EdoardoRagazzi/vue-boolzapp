@@ -77,15 +77,23 @@
             </div>
             <div class="middle-sidebar">
 
-                <div v-for="(item,index) in contacts[this.counter].messages">
-                    <div v-if="item.status == 'received'" class="receiveMess">
-                        {{item.text}} <br>
+                <div class="mess " v-for="(item,index) in contacts[this.counter].messages">
+                    <div v-if="item.status == 'received'" class="receiveMess dropdown">
+                        {{item.text}} <i class="fas fa-angle-down "></i>
+                        <div class="dropdown-content">
+                            <a href="#">Hello World!</a>
+                        </div> <br>
+                        <div class="data">{{item.hour}}</div>
+
+                    </div>
+                    <div v-else class="sendMess dropdown">
+                        {{item.text}} <i class="fas fa-angle-down "></i>
+                        <div class="dropdown-content">
+                            <p>Hello World!</p>
+                        </div> <br>
                         <div class="data">{{item.hour}}</div>
                     </div>
-                    <div v-else class="sendMess">
-                        {{item.text}} <br>
-                        <div class="data">{{item.hour}}</div>
-                    </div>
+
 
                 </div>
                 <div v-for="(item,index) in contacts[this.counter].messages">

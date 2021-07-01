@@ -174,7 +174,32 @@ background-color: #EAEAEA;
     flex-flow: column nowrap;
     align-content: flex-end;
 }
+/*-------FAS FA ANGLE DOWN------*/
+.middle-sidebar i{
+    display: none;
+}
+.middle-sidebar .sendMess:hover i, .receiveMess:hover   i{
+    display: inline;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+   color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px 30px;
+    margin: auto;
+    z-index: 1;
+    right: 0px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /* BOTTOM SIDEBAR RIGHT SIDE */
 .bottom-sidebar{
     display: flex;
@@ -212,6 +237,7 @@ background-color: #EAEAEA;
     padding: 10px; 
     margin: 2% 10%;
     color: white;
+    
     
     
 }
