@@ -59,6 +59,7 @@ img{
     vertical-align: middle;
     cursor: pointer;
 }
+/* LOGO-UTENTE */
 .logo-utente{
     height: 100%;
     width: 60%;
@@ -185,7 +186,7 @@ background-color: #EAEAEA;
     position: relative;
     display: inline-block;
 }
-
+/* DROPDOWN CONTENT */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -254,6 +255,7 @@ background-color: #EAEAEA;
     color: white;   
     border-width: 13px 10px 0 10px;
 }
+/* DATA AND DAY */
 .data{
     font-size: 0.4rem;
     float: right;
@@ -270,7 +272,6 @@ background-color: #EAEAEA;
     border-radius: 10px;
     padding: 10px;
     margin: 2% 10%;
-    
 }
 
 

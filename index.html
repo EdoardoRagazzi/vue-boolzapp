@@ -20,9 +20,7 @@
     <!-- CONTAINER FOR VUE JS -->
     <div class="container" id="app">
 
-        <!--------------container altezza  di conseguenza togli altezza a left right-->
         <!-- LEFT SIDE -->
-
         <div class="left">
             <div class="upper-sidebar">
                 <div class="logo-utente">
@@ -48,7 +46,6 @@
                 <div class="search">
                     <i class="fas fa-search"></i>
                     <input type="text" placeholder=" Cerca o inizia una nuova chat" v-model="stringa">
-
                 </div>
             </div>
             <div class="chats">
@@ -68,7 +65,6 @@
                     <img :src="'img/avatar' + contacts[this.counter].avatar + '.jpg'" alt="">
                     <h3>{{contacts[this.counter].name}}</h3>
                 </div>
-
                 <div class="icons">
                     <i class="fas fa-search"></i>
                     <i class="fas fa-paperclip"></i>
@@ -76,33 +72,27 @@
                 </div>
             </div>
             <div class="middle-sidebar">
-
                 <div class="mess " v-for="(item,index) in contacts[this.counter].messages">
                     <div v-if="item.status == 'received'" class="receiveMess dropdown">
                         {{item.text}} <i class="fas fa-angle-down "></i>
                         <div class="dropdown-content">
-                            <p @click="deleteMessage(index)">Hello World!</p>
+                            <p @click="deleteMessage(index)"><i class="fas fa-dumpster"></i></p>
                         </div> <br>
                         <div class="data">{{item.hour}}</div>
-
                     </div>
                     <div v-else class="sendMess dropdown">
                         {{item.text}} <i class="fas fa-angle-down "></i>
                         <div class="dropdown-content">
-                            <p @click="deleteMessage(index)">Hello World!</p>
+                            <p @click="deleteMessage(index)"><i class="fas fa-dumpster"></i></p>
                         </div> <br>
                         <div class="data">{{item.hour}}</div>
                     </div>
-
-
                 </div>
                 <div v-for="(item,index) in contacts[this.counter].messages">
                     <div class="day" v-if="index == 0">
                         {{item.date}}
                     </div>
-
                 </div>
-
             </div>
             <div class="bottom-sidebar">
                 <i class="far fa-smile-beam"></i>

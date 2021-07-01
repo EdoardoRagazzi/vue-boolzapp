@@ -162,6 +162,7 @@ const app = new Vue(
                 }
             ]
         },
+        //-------------------METODI AND FUNCTION----------------------//
         methods: {
             changeUtente(index) {
                 this.counter = index;
@@ -191,9 +192,9 @@ const app = new Vue(
                 }
             },
             deleteMessage(index) {
-                const messaggio = this.search[this.counter].messages[this.counter].text
+                const messaggio = this.contacts[this.counter].messages
                 console.log(messaggio)
-                this.search[this.counter].messages.splice(0, 1)
+                this.contacts[this.counter].messages.splice(index, 1)
             }
         },
         computed: {
