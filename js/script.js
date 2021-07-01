@@ -192,8 +192,9 @@ const app = new Vue(
                 }
             },
             deleteMessage(index) {
-                const messaggio = this.contacts[this.counter].messages
-                console.log(messaggio)
+                // const messaggio = this.contacts[this.counter].messages
+                // console.log(messaggio)
+
                 this.contacts[this.counter].messages.splice(index, 1)
             }
         },

@@ -72,18 +72,12 @@
                 </div>
             </div>
             <div class="middle-sidebar">
-                <div class="mess " v-for="(item,index) in contacts[this.counter].messages">
-                    <div v-if="item.status == 'received'" class="receiveMess dropdown">
+                <div class="mess" v-for="(item,index) in contacts[counter].messages">
+                    <div :class="item.status == 'received'? 'receiveMess' : 'sendMess'" class="dropdown">
                         {{item.text}} <i class="fas fa-angle-down "></i>
                         <div class="dropdown-content">
-                            <p @click="deleteMessage(index)"><i class="fas fa-dumpster"></i></p>
-                        </div> <br>
-                        <div class="data">{{item.hour}}</div>
-                    </div>
-                    <div v-else class="sendMess dropdown">
-                        {{item.text}} <i class="fas fa-angle-down "></i>
-                        <div class="dropdown-content">
-                            <p @click="deleteMessage(index)"><i class="fas fa-dumpster"></i></p>
+                            <p @click="deleteMessage(contacts[counter].messages, index)"><i class="fas fa-dumpster"></i>
+                            </p>
                         </div> <br>
                         <div class="data">{{item.hour}}</div>
                     </div>
