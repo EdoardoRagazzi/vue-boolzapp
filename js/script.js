@@ -5,6 +5,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+
             stringa: '',
             newData: '',
             counter: 0,
@@ -188,6 +189,11 @@ const app = new Vue(
                         }, 1000);
                     }
                 }
+            },
+            deleteMessage(index) {
+                const messaggio = this.search[this.counter].messages[this.counter].text
+                console.log(messaggio)
+                this.search[this.counter].messages.splice(0, 1)
             }
         },
         computed: {

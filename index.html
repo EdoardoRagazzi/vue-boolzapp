@@ -81,7 +81,7 @@
                     <div v-if="item.status == 'received'" class="receiveMess dropdown">
                         {{item.text}} <i class="fas fa-angle-down "></i>
                         <div class="dropdown-content">
-                            <a href="#">Hello World!</a>
+                            <p @click="deleteMessage(index)">Hello World!</p>
                         </div> <br>
                         <div class="data">{{item.hour}}</div>
 
@@ -89,7 +89,7 @@
                     <div v-else class="sendMess dropdown">
                         {{item.text}} <i class="fas fa-angle-down "></i>
                         <div class="dropdown-content">
-                            <p>Hello World!</p>
+                            <p @click="deleteMessage(index)">Hello World!</p>
                         </div> <br>
                         <div class="data">{{item.hour}}</div>
                     </div>
